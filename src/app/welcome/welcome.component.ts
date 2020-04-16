@@ -13,6 +13,9 @@ export class WelcomeComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
+		if (this.homeService.pageOpened) {
+			this.router.navigate(['home']);
+		}
 	}
 
 	clickNext(): void {
