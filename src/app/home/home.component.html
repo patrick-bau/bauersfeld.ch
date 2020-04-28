@@ -1,12 +1,16 @@
-<div class="wrapper" fxLayout="row" fxLayoutAlign="center center">
-    <button mat-button>
-        <a href="https://patrick-bauersfeld.quickconnect.to/drive">Drive</a>
-    </button>
-    <button mat-button>
-        <a href="https://patrick-bauersfeld.quickconnect.to/moments">Moments</a>
-    </button>
-    <button mat-button>
-        <a href="https://app.plex.tv">Plex</a>
-    </button>
-    <mat-checkbox [(ngModel)]="skipWelcome" (change)="setSkipWelcome()">Überspringe Willkommen-Seite</mat-checkbox>
+<div class="wrapper" fxLayout="column" fxLayoutAlign="space-around center">
+    <div class="navigation" fxLayout="row" fxLayoutAlign="center center">
+        <button mat-button>
+            <a href="https://patrick-bauersfeld.quickconnect.to/drive">Drive</a>
+        </button>
+        <button mat-button>
+            <a href="https://patrick-bauersfeld.quickconnect.to/moments">Moments</a>
+        </button>
+        <button mat-button>
+            <a href="https://app.plex.tv">Plex</a>
+        </button>
+    </div>
+    <div>
+        <mat-checkbox [(ngModel)]="skipWelcome" (change)="setSkipWelcome()">Überspringe Willkommen-Seite</mat-checkbox>
+    </div>
 </div>
