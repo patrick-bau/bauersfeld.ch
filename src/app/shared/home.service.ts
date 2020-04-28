@@ -4,17 +4,21 @@ import { Injectable } from '@angular/core';
 	providedIn: 'root'
 })
 export class HomeService {
-	private readonly pageOpened_ls = 'pageOpened';
+	private readonly skipWelcome_ls = 'skipWelcome';
 
 	constructor() {
 	}
 
-	public setPageOpened(): void {
-		localStorage.setItem(this.pageOpened_ls, 'true');
+	public setSkipWelcome(): void {
+		localStorage.setItem(this.skipWelcome_ls, 'true');
 	}
 
-	public get pageOpened(): boolean {
-		if (localStorage.getItem(this.pageOpened_ls) === 'true') {
+	public removeSkipWelcome(): void {
+		localStorage.removeItem(this.skipWelcome_ls);
+	}
+
+	public get skipWelcome(): boolean {
+		if (localStorage.getItem(this.skipWelcome_ls) === 'true') {
 			return true;
 		} else {
 			return false;

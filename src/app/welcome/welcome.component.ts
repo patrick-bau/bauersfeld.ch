@@ -13,13 +13,12 @@ export class WelcomeComponent implements OnInit {
 	}
 
 	ngOnInit(): void {
-		if (this.homeService.pageOpened) {
+		if (this.homeService.skipWelcome) {
 			this.router.navigate(['home']);
 		}
 	}
 
 	clickNext(): void {
-		this.homeService.setPageOpened();
 		this.router.navigate(['home']);
 	}
 }
