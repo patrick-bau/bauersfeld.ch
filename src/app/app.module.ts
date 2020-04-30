@@ -11,12 +11,14 @@ import { MatButtonModule } from '@angular/material/button';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
+import { DevComponent } from './dev/dev.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    WelcomeComponent
+    WelcomeComponent,
+    DevComponent
   ],
 	imports: [
 		BrowserModule,
