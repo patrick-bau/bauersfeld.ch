@@ -2,22 +2,26 @@
 
 #header {
   img {
+    margin-top: 80px;
     $icon-size: 300px;
     width: $icon-size;
-    height: $icon-size;
+    max-width: 60%;
+    height: max-width / 1;
     font-size: $icon-size;
   }
 
   span {
-    margin-top: 20px;
+    margin: 20px 40px;
     font-size: 50px;
+    text-align: center;
   }
 }
 
 #project-cards {
+  width: 100%;
   .mat-card {
     width: 500px;
-    max-width: 500px;
+    max-width: 80%;
     margin-bottom: 20px;
     box-shadow: 5px 10px 20px $grey;
 
