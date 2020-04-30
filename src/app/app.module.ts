@@ -12,6 +12,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { DevComponent } from './dev/dev.component';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { DevComponent } from './dev/dev.component';
 		MatIconModule,
 		MatButtonModule,
 		MatCheckboxModule,
-		FormsModule
+		FormsModule,
+		MatCardModule
 	],
   providers: [],
   bootstrap: [AppComponent]

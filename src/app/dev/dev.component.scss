@@ -1,0 +1,36 @@
+@import 'src/styles.scss';
+
+#header {
+  img {
+    $icon-size: 300px;
+    width: $icon-size;
+    height: $icon-size;
+    font-size: $icon-size;
+  }
+
+  span {
+    margin-top: 20px;
+    font-size: 50px;
+  }
+}
+
+#project-cards {
+  .mat-card {
+    width: 500px;
+    max-width: 500px;
+    margin-bottom: 20px;
+    box-shadow: 5px 10px 20px $grey;
+
+    img {
+      $icon-size: 100px;
+      width: $icon-size;
+      height: $icon-size;
+      font-size: $icon-size;
+    }
+
+    b {
+      margin-left: 20px;
+      font-size: 22px;
+    }
+  }
+}
