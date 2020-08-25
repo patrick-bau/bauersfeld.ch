@@ -1,4 +1,19 @@
 <div class="wrapper" fxLayout="column" fxLayoutAlign="space-around center">
   <mat-icon aria-hidden="false" aria-label="Example home icon">home</mat-icon>
-  <app-time-picker (timeChanged)="onTimeChanged($event)"></app-time-picker>
+  <div fxLayout="row">
+    <app-time-picker (timeChanged)="onTimeChanged($event)"></app-time-picker>
+    <button mat-flat-button color="primary" (click)="stamp()">Stempeln</button>
+  </div>
+  <div>
+    <div *ngFor="let stamp of timestamps">
+      <span>{{stamp.getHours()}}:{{stamp.getMinutes()}}</span>
+      <button mat-icon-button (click)="removeStamp(stamp)">
+        <mat-icon>clear</mat-icon>
+      </button>
+    </div>
+  </div>
+  <div fxLayout="row" fxLayoutAlign="space-around center" style="width: 100%">
+    <span>Arbeitszeit: {{worktime}}</span>
+    <span>Feierabend: {{endOfWork.getHours()}}:{{endOfWork.getMinutes()}}</span>
+  </div>
 </div>
