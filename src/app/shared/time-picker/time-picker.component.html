@@ -1,0 +1,25 @@
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <button mat-icon-button (click)="increaseHours()">
+      <span class="fas fa-angle-up"></span>
+    </button>
+    <mat-form-field>
+      <input matInput [value]="time.getHours()" (change)="setHours()" type="number" [formControl]="hoursControl">
+    </mat-form-field>
+    <button mat-icon-button class="decrease-buttons" (click)="decreaseHours()">
+      <span class="fas fa-angle-down"></span>
+    </button>
+  </div>
+  <b>:</b>
+  <div fxLayout="column" fxLayoutAlign="center center">
+    <button mat-icon-button (click)="increaseMinutes()">
+      <span class="fas fa-angle-up"></span>
+    </button>
+    <mat-form-field>
+      <input matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
+    </mat-form-field>
+    <button mat-icon-button class="decrease-buttons" (click)="decreaseMinutes()">
+      <span class="fas fa-angle-down"></span>
+    </button>
+  </div>
+</div>

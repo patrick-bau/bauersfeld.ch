@@ -10,10 +10,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import { FormsModule } from '@angular/forms';
+import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DevComponent } from './dev/dev.component';
 import { MatCardModule } from '@angular/material/card';
 import { WorktimeCalculatorComponent } from './worktime-calculator/worktime-calculator.component';
+import { TimePickerComponent } from './shared/time-picker/time-picker.component';
+import {MatFormFieldModule} from "@angular/material/form-field";
 
 @NgModule({
   declarations: [
@@ -21,19 +23,22 @@ import { WorktimeCalculatorComponent } from './worktime-calculator/worktime-calc
     HomeComponent,
     WelcomeComponent,
     DevComponent,
-    WorktimeCalculatorComponent
+    WorktimeCalculatorComponent,
+    TimePickerComponent
   ],
-	imports: [
-		BrowserModule,
-		AppRoutingModule,
-		BrowserAnimationsModule,
-		FlexLayoutModule,
-		MatIconModule,
-		MatButtonModule,
-		MatCheckboxModule,
-		FormsModule,
-		MatCardModule
-	],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    FlexLayoutModule,
+    MatIconModule,
+    MatButtonModule,
+    MatCheckboxModule,
+    FormsModule,
+    MatCardModule,
+    ReactiveFormsModule,
+    MatFormFieldModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
