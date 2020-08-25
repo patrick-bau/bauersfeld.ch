@@ -1,20 +1,20 @@
 <div fxLayout="row" fxLayoutAlign="center center">
   <div fxLayout="column" fxLayoutAlign="center center">
-    <button mat-icon-button (click)="increaseHours()">
+    <button tabindex="-1" mat-icon-button (click)="increaseHours()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <input [value]="time.getHours()" (change)="setHours()" type="number" [formControl]="hoursControl">
-    <button mat-icon-button (click)="decreaseHours()">
+    <input tabindex="1" (change)="setHours()" type="number" [formControl]="hoursControl">
+    <button tabindex="-1" mat-icon-button (click)="decreaseHours()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>
   <b>:</b>
   <div fxLayout="column" fxLayoutAlign="center center">
-    <button mat-icon-button (click)="increaseMinutes()">
+    <button tabindex="-1" mat-icon-button (click)="increaseMinutes()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <input matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
-    <button mat-icon-button (click)="decreaseMinutes()">
+    <input tabindex="2" matInput (change)="setMinutes()" type="number" [formControl]="minutesControl">
+    <button tabindex="-1" mat-icon-button (click)="decreaseMinutes()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>

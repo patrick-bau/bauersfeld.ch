@@ -18,7 +18,10 @@ export class TimePickerComponent implements OnInit {
   ngOnInit() {
     this.hoursControl = new FormControl();
     this.minutesControl = new FormControl();
+    this.hoursControl.setValue(this.time.getHours());
+    this.minutesControl.setValue(this.time.getMinutes());
     this.timeChanged.emit(this.time);
+    console.log(this.time);
   }
 
   increaseHours(): void {
