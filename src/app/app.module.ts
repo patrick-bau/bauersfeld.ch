@@ -10,12 +10,12 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { MatCheckboxModule } from '@angular/material/checkbox';
-import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { DevComponent } from './dev/dev.component';
 import { MatCardModule } from '@angular/material/card';
 import { WorktimeCalculatorComponent } from './worktime-calculator/worktime-calculator.component';
 import { TimePickerComponent } from './shared/time-picker/time-picker.component';
-import {MatFormFieldModule} from "@angular/material/form-field";
+import { FormsModule, ReactiveFormsModule } from "@angular/forms";
+import { MatInputModule } from "@angular/material/input";
 
 @NgModule({
   declarations: [
@@ -34,10 +34,10 @@ import {MatFormFieldModule} from "@angular/material/form-field";
     MatIconModule,
     MatButtonModule,
     MatCheckboxModule,
-    FormsModule,
     MatCardModule,
     ReactiveFormsModule,
-    MatFormFieldModule
+    FormsModule,
+    MatInputModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

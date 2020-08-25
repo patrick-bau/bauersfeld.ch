@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./worktime-calculator.component.scss']
 })
 export class WorktimeCalculatorComponent implements OnInit {
+  timestamp = new Date();
 
   constructor() { }
 
   ngOnInit(): void {
   }
 
+  onTimeChanged(time: Date): void {
+   this.timestamp = time;
+  }
 }
