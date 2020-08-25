@@ -3,6 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { DevComponent } from './dev/dev.component';
+import {WorktimeCalculatorComponent} from "./worktime-calculator/worktime-calculator.component";
 
 
 const routes: Routes = [
@@ -10,6 +11,7 @@ const routes: Routes = [
 	{path: 'home', component: HomeComponent},
 	{path: 'welcome', component: WelcomeComponent},
 	{path: 'dev', component: DevComponent},
+  {path: 'worktime-calculator', component: WorktimeCalculatorComponent},
 ];
 
 @NgModule({

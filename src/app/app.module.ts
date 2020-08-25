@@ -13,13 +13,15 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
 import { FormsModule } from '@angular/forms';
 import { DevComponent } from './dev/dev.component';
 import { MatCardModule } from '@angular/material/card';
+import { WorktimeCalculatorComponent } from './worktime-calculator/worktime-calculator.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     WelcomeComponent,
-    DevComponent
+    DevComponent,
+    WorktimeCalculatorComponent
   ],
 	imports: [
 		BrowserModule,
