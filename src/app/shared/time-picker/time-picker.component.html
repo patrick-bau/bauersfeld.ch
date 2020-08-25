@@ -13,7 +13,7 @@
     <button tabindex="-1" mat-icon-button (click)="increaseMinutes()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <input tabindex="2" matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
+    <input tabindex="2" enter matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
     <button tabindex="-1" mat-icon-button (click)="decreaseMinutes()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
