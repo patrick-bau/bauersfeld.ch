@@ -37,13 +37,18 @@ export class WorktimeCalculatorComponent implements OnInit {
       return a < b ? 1 : a === b ? 0 : -1;
     });
 
+    let timestampLength = 0;
     if (this.timestamps.length % 2 === 0) {
-      this.worktime = 0;
-      for (let i = 0; i < this.timestamps.length-1; i += 2) {
-        const endTime = this.timestamps[i+1].getHours() + ((this.timestamps[i+1].getMinutes() / 60 * 100) * 0.01);
-        const startTime = this.timestamps[i].getHours() + ((this.timestamps[i].getMinutes() / 60 * 100) * 0.01)
-        this.worktime += endTime - startTime;
-      }
+      timestampLength = this.timestamps.length-1
+    } else {
+      timestampLength = this.timestamps.length-2
+    }
+
+    this.worktime = 0;
+    for (let i = 0; i < this.timestamps.length-1; i += 2) {
+      const endTime = this.timestamps[i+1].getHours() + ((this.timestamps[i+1].getMinutes() / 60 * 100) * 0.01);
+      const startTime = this.timestamps[i].getHours() + ((this.timestamps[i].getMinutes() / 60 * 100) * 0.01)
+      this.worktime += endTime - startTime;
     }
   }
 }
