@@ -3,10 +3,8 @@
     <button mat-icon-button (click)="increaseHours()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <mat-form-field appearance="outline">
-      <input matInput [value]="time.getHours()" (change)="setHours()" type="number" [formControl]="hoursControl">
-    </mat-form-field>
-    <button mat-icon-button class="decrease-buttons" (click)="decreaseHours()">
+    <input [value]="time.getHours()" (change)="setHours()" type="number" [formControl]="hoursControl">
+    <button mat-icon-button (click)="decreaseHours()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>
@@ -15,10 +13,8 @@
     <button mat-icon-button (click)="increaseMinutes()">
       <mat-icon>keyboard_arrow_up</mat-icon>
     </button>
-    <mat-form-field appearance="outline">
-      <input matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
-    </mat-form-field>
-    <button mat-icon-button class="decrease-buttons" (click)="decreaseMinutes()">
+    <input matInput [value]="time.getMinutes()" (change)="setMinutes()" type="number" [formControl]="minutesControl">
+    <button mat-icon-button (click)="decreaseMinutes()">
       <mat-icon>keyboard_arrow_down</mat-icon>
     </button>
   </div>

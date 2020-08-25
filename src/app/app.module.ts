@@ -16,6 +16,7 @@ import { WorktimeCalculatorComponent } from './worktime-calculator/worktime-calc
 import { TimePickerComponent } from './shared/time-picker/time-picker.component';
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { MatInputModule } from "@angular/material/input";
+import {MatListModule} from "@angular/material/list";
 
 @NgModule({
   declarations: [
@@ -38,6 +39,7 @@ import { MatInputModule } from "@angular/material/input";
     ReactiveFormsModule,
     FormsModule,
     MatInputModule,
+    MatListModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
