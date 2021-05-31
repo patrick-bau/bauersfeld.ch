@@ -1,21 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-$black: #000000;
-$white: #FFFFFF;
-$grey: #808080;
-
-
-//Wrapper
-.wrapper {
-  width: 100%;
-  height: 100vh;
-  background: $white;
-}
-
-//Checkbox
-::ng-deep .mat-checkbox-checked.mat-accent .mat-checkbox-background,.mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
-  background-color: $black;
+html, body {
+  min-height: 100vh;
+  height: auto;
+  margin: 0;
 }
