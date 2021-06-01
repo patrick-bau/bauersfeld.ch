@@ -1,8 +1,13 @@
 <div class="wrapper">
-  <div class="button" matRipple>
-    <a href="https://bucket.bauersfeld.ch/drive">Drive</a>
-  </div>
-  <div class="button" matRipple>
-    <a href="https://bucket.bauersfeld.ch/moments">Moments</a>
+  <div class="content">
+    <span class="clock" (click)="clickOnClock()">{{ time | async | date: 'hh:mm' }}</span>
+    <div class="navigation" *ngIf="!onlyClock">
+      <div class="button" matRipple>
+        <a href="https://bucket.bauersfeld.ch/drive">Drive</a>
+      </div>
+      <div class="button" matRipple>
+        <a href="https://bucket.bauersfeld.ch/moments">Moments</a>
+      </div>
+    </div>
   </div>
 </div>
