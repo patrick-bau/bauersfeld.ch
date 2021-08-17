@@ -1,13 +1,9 @@
 <div class="wrapper">
   <div class="content">
-    <span class="clock" (click)="clickOnClock()">{{ time | async | date: 'hh:mm' }}</span>
+    <span class="clock" (click)="clickOnClock()">{{ time | async | date: 'HH:mm' }}</span>
     <div class="navigation" *ngIf="!onlyClock">
-      <div class="button" matRipple>
-        <a href="https://bucket.bauersfeld.ch/drive">Drive</a>
-      </div>
-      <div class="button" matRipple>
-        <a href="https://bucket.bauersfeld.ch/moments">Moments</a>
-      </div>
+      <a class="button" matRipple href="https://bucket.bauersfeld.ch/drive">Drive</a>
+      <a class="button" matRipple href="https://bucket.bauersfeld.ch/moments">Moments</a>
     </div>
   </div>
 </div>
